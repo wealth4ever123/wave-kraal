@@ -1,0 +1,12 @@
+{
+  "name": "wave-kraal",
+  "private": true,
+  "workspaces": ["keeper", "backend", "frontend"],
+  "scripts": {
+    "build:contracts": "cd contracts && cargo build --release",
+    "test:contracts": "cd contracts && cargo test",
+    "dev:keeper": "npm run dev --workspace=keeper",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend"
+  }
+}
